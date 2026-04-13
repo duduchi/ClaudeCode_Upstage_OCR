@@ -37,6 +37,12 @@ build/
 # Claude Code 로컬 설정
 .claude/settings.local.json
 
+# Playwright MCP 임시 파일
+.playwright-mcp/
+
+# Vite 캐시
+frontend/.vite/
+
 # OS
 .DS_Store
 Thumbs.db
