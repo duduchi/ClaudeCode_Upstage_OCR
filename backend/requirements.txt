@@ -1,0 +1,11 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+sqlalchemy==2.0.40
+pydantic==2.11.3
+pydantic-settings==2.9.0
+python-dotenv==1.1.0
+langchain==0.3.24
+langchain-upstage==0.7.0
+aiofiles==24.1.0
+pillow==11.2.1
