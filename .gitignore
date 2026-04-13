@@ -10,6 +10,7 @@ __pycache__/
 .env
 .env.local
 .env.*.local
+backend/.env
 
 # SQLite DB
 *.db
