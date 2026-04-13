@@ -1,7 +1,16 @@
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
-DATABASE_URL = "sqlite:///./receipt.db"
+# Vercel 환경: 파일시스템이 읽기 전용이므로 /tmp 사용
+# 로컬 환경: DATABASE_URL 환경변수 또는 backend/ 디렉토리 기본값
+_default_db = (
+    "sqlite:////tmp/receipt.db"
+    if os.getenv("VERCEL")
+    else "sqlite:///./receipt.db"
+)
+DATABASE_URL = os.getenv("DATABASE_URL", _default_db)
 
 engine = create_engine(
     DATABASE_URL,

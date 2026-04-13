@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 from uuid import uuid4
 
@@ -18,8 +19,16 @@ from app.services.ocr_service import run_ocr
 
 router = APIRouter(prefix="/api/receipts", tags=["receipts"])
 
-# uploads/ 디렉토리 — backend/uploads/
-UPLOAD_DIR = Path(__file__).parent.parent.parent / "uploads"
+# uploads/ 디렉토리 — main.py 와 동일한 로직으로 결정
+if os.getenv("VERCEL"):
+    UPLOAD_DIR = Path("/tmp/uploads")
+else:
+    UPLOAD_DIR = Path(
+        os.getenv(
+            "UPLOAD_DIR",
+            str(Path(__file__).parent.parent.parent / "uploads"),
+        )
+    )
 
 # 허용 MIME 타입 및 최대 파일 크기
 ALLOWED_MIME = {"image/jpeg", "image/png", "application/pdf"}
