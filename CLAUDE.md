@@ -18,7 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | 영역 | 기술 |
 |------|------|
 | 프론트엔드 | ReactJS 18+, Vite 5+, TailwindCSS 3+, Recharts 2+, Axios 1.6+ |
-| 백엔드 | Python 3.11+, FastAPI 0.110+, LangChain 1.2+, langchain-upstage 0.7+ |
+| 백엔드 | Python 3.11+, FastAPI 0.110+, LangChain 1.2.15, langchain-core 1.2.28, langchain-upstage 0.7.7, langchain-openai 1.1.12 |
 | 데이터베이스 | SQLite (내장, 별도 서버 없음) |
 | 배포 | Vercel (프론트엔드), 백엔드 배포 환경 미확정 (로컬 기준 개발) |
 

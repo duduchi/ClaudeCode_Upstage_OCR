@@ -548,11 +548,15 @@ focus:outline-none  focus:ring-2  focus:ring-indigo-500  focus:border-transparen
 |------|------|------|
 | Python | 3.11+ | 런타임 |
 | FastAPI | 0.110+ | REST API 서버, 자동 Swagger 문서 |
-| LangChain | 1.2+ | LLM 파이프라인 |
-| langchain-upstage | 0.7+ | Upstage Vision LLM OCR |
+| LangChain | 1.2.15 | LLM 파이프라인 |
+| langchain-core | 1.2.28 | LangChain 핵심 인터페이스 |
+| langchain-upstage | 0.7.7 | Upstage Vision LLM OCR |
+| langchain-openai | 1.1.12 | OpenAI 호환 LLM 인터페이스 (Upstage 의존) |
+| langchain-text-splitters | 1.1.1 | 텍스트 분할 유틸리티 |
+| langsmith | 0.7.30 | LLM 호출 추적 및 디버깅 |
 | SQLite | 내장 | 데이터 저장 |
 | SQLAlchemy | 2.0+ | ORM (SQL Injection 방지) |
-| python-multipart | - | 파일 업로드 처리 |
+| python-multipart | 0.0.20 | 파일 업로드 처리 |
 
 ### 9.2 프론트엔드
 
