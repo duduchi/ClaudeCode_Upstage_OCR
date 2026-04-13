@@ -1,0 +1,41 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# 환경변수 (절대 커밋 금지)
+.env
+.env.local
+.env.*.local
+
+# SQLite DB
+*.db
+*.sqlite3
+
+# 업로드 파일
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Node.js
+node_modules/
+frontend/dist/
+frontend/.cache/
+
+# 빌드 산출물
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로그
+*.log
